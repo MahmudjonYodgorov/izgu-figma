@@ -1,0 +1,85 @@
+/****************  FONT STYLES  ************** */
+/* montserrat-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src:   url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+           url('../fonts/montserrat-v25-latin-500.woff') format('woff'), /* Modern Browsers */        
+}
+
+:root{
+    --header-bg-color: #0D9676;
+    --main-bg-color: #FFF;
+    --main-text-color: #000;
+    --any-text-color: #84919A;
+    --footer-bg-color: #2A2A2A;
+}
+
+body{
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 500;
+
+
+}
+
+
+/* :root {
+     --header-bg-color: #fff;
+    --hero-bg-color:#DBEBF8;
+    --main-title-color:#050931;
+    --main-text-color: #647685;
+    --main-subtitle-color: #1B1E1C;
+    --main-bg-color:#F4F9FD;
+    --btn-bg-color:#1F6BFF; 
+ } */
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    box-sizing :border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Rubik" , "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
